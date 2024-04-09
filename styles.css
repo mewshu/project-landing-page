@@ -1,9 +1,29 @@
 
+.full-bleed {
+    box-shadow: 0 0 0 100vmax #212936;
+    clip-path: inset(0 -100vmax);
+}
+
+.full-bleed-quote {
+    box-shadow: 0 0 0 100vmax #dddddd; 
+    clip-path: inset(0 -100vmax);
+}
+
 body {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+}
+
+.description button {
+    background-color: #2E90FA;
+    color: white;
+    padding: 8px 36px;
+    border-radius: 4px;
+    border: none;
 }
 
 .width {
@@ -16,6 +36,8 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-self: stretch;
+    background-color: #212936;
+    color: white;
 }
 
 .logo {
@@ -29,13 +51,13 @@ trying to select the p here to override the max-width
 on line 79. 
 */
 .description p {
-    width: 400;
+    min-width: 200px;
 }
 
 h1 {
-    font-size: 60px;
+    font-size: 48px;
     font-weight: 900;
-
+    margin: 0px;
 }
 
 .nav-bar {
@@ -55,14 +77,17 @@ li {
 }
 
 img {
-    width: 240px;
-    height: auto;
+    width: 50%;
+    height: 50%;
 }
 
 #header .content{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     gap: 80px;
+    margin-top: 40px;
+    margin-bottom: 80px;
 }
 
 #header .description {
@@ -78,7 +103,8 @@ img {
 .img-sm {
     height: 120px;
     width: 120px;
-    border: 2px solid black
+    border: 2px solid black;
+    border-radius: 8px;
 }
 
 .card {
@@ -98,6 +124,8 @@ p {
     justify-content: space-between;
     align-self: stretch;
     align-items: center;
+    gap: 24px;
+    margin-top: 24px;
 }
 
 #section2 {
@@ -106,6 +134,8 @@ p {
     justify-content: space-between;
     align-self: stretch;
     align-items: center;
+    margin-top: 40px;
+    margin-bottom: 80px;
 }
 
 #section3 {
@@ -114,13 +144,52 @@ p {
     flex-direction: column;
     align-items: flex-end;
     justify-content: space-between;
-    background-color: lightblue;
+    background-color: #dddddd;
+}
+
+.quote {
+    font-size: 24px;
+    color: gray;
+    font-style: italic;
+}
+
+.speaker {
+    font-size: 16px;
+    font-weight: bold;
 }
 
 #section4 .content {
-    background-color: blue;
+    background-color: #2E90FA;
+    margin: 40px;
+    padding: 40px 80px;
+    border-radius: 8px;
+    display: flex;
+    color: white;
+    gap: 24px;
+}
+
+.content button {
+    padding: 4px 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    background-color: #2E90FA;
+    color: white;
+    border-radius: 8px;
+}
+
+.bold {
+    font-weight: bold;
 }
 
 #footer {
-    background-color: aquamarine;
+    background-color: #212936;
+    color: white;
+    padding: 40px;
+}
+
+.thin {
+    font-size: 12px;
+    font-weight: 100;
 }
