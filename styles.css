@@ -1,0 +1,126 @@
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.width {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+#header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: stretch;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 900;
+}
+
+
+/* not sure how to make this work. 
+trying to select the p here to override the max-width
+on line 79. 
+*/
+.description p {
+    width: 400;
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: 900;
+
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    gap: 16px;
+}
+
+li {
+    display: flex;
+}
+
+img {
+    width: 240px;
+    height: auto;
+}
+
+#header .content{
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+}
+
+#header .description {
+    
+    flex-direction: column;
+    align-items: left;
+}
+
+.description p {
+    text-align: left;
+}
+
+.img-sm {
+    height: 120px;
+    width: 120px;
+    border: 2px solid black
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    max-width: 140px;
+    text-align: center;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    align-self: stretch;
+    align-items: center;
+}
+
+#section2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: stretch;
+    align-items: center;
+}
+
+#section3 {
+    padding: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    background-color: lightblue;
+}
+
+#section4 .content {
+    background-color: blue;
+}
+
+#footer {
+    background-color: aquamarine;
+}
